@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+}
+#maindiv
+{
+    /* position: absolute; */
+    width: 100%;
+    border: 1mm dotted purple;
+    display: flex;
+    margin-left: 10px;
+}
+#left-half
+{
+    border: 1mm solid red;
+    /* position: relative; */
+    left: 10px;
+}
+#mainimg
+{
+    border: 1mm solid gray;
+    /* position: relative; */
+    /* left: 100px; */
+    top: 10px;
+
+}
+ul{
+    list-style: none;
+    height: auto;
+}
