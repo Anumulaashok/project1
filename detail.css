@@ -1,29 +1,153 @@
 *{
-    margin: 0px;
+    margin: 5px;
+}
+#smart
+{ width: 60%;
+    margin: auto;
 }
 #maindiv
 {
+    margin-top: 20px;
     /* position: absolute; */
     width: 100%;
     border: 1mm dotted purple;
     display: flex;
-    margin-left: 10px;
+   
+    
 }
 #left-half
 {
     border: 1mm solid red;
-    /* position: relative; */
+    width: 70%;
     left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 1400px;
+    overflow: scroll;
 }
-#mainimg
+#left-half::-webkit-scrollbar {
+    display: none;
+}
+#right-half
 {
-    border: 1mm solid gray;
-    /* position: relative; */
-    /* left: 100px; */
-    top: 10px;
+    font-family: GT-America-Standard,Helvetica,sans-serif;
+    margin-left: 40px;
+}
+.bolder{
+    font-weight: 600;
+}
+.margintopp{
+    margin-top: 30px;
+}
+.circle{
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+   
+}
+.circle>img
+{
+    width: 45px;
+    height: 43px;
+    border-radius: 120%;
+    border: 1mm solid  black;
+  
+}
+.tables
+{
+ /* border: 1mm solid red;  */
+ display: flex;
+ justify-content: flex-start;
+ text-align: left;
+}
+.tables>div
+{
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    font-weight: 400;
+}
+.tables>div:hover
+{
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: 900;
+}
+
+.clicker{
+color: white;
+background: #EE4A1B;
+border-color: #EE4A1B;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+justify-items: center;
+height: 40px;
 
 }
-ul{
-    list-style: none;
-    height: auto;
+.colors
+{
+    color: black;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+.parts{
+    display: flex;
+}
+.part1
+{
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.pointing{
+    cursor: pointer;
+}
+li{
+   margin-bottom: 10px; 
+}
+.more-less
+{
+    position: relative;
+    margin-bottom: 2em;
+}
+.showmore{
+    overflow: hidden;
+    line-height: 10px;
+}
+@media screen and (min-width:400px) and (max-width:1366px) {
+#smart
+{ 
+        width: 90%;
+    margin: auto;
+}
+
+#left-half
+{
+    border: 1mm solid red;
+    width: 60%;
+    left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 1000px;
+    overflow: scroll;
+}
+#left-half>div{
+
+}
+#left-half>div>img{
+
+    width: 100%;
+}
+
+
 }
